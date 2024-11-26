@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll-controlled Video</title>
+  <style>
+    body {
+      margin: 0;
+      height: 600vh; /* Make the page scrollable */
+    }
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%; /* Adjust as needed */
+    }
+  </style>
+</head>
+<body>
+  <!-- Video element with reference to the file in the assets folder -->
+  <video id="scrollVideo" src="assets/your-video2.mp4" muted></video>
+
+  <!-- Link the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
